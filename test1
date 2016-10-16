@@ -14,12 +14,4 @@ Status InitStack(SqStack &S){
  			*S.top[i]-- = x;  
  		 return OK;
  }
- Status Pop(SqStack &S,int i,SElementType x){
- 		if (S.top[i] == S.base[i])
- 			return ERROR;
- 		if (i == 0)
- 		x = * -- S.top[i];   
- 		else      
- 		x = * ++ S.top[i];
- 		  return OK;
- }
+ 
